@@ -1,0 +1,13 @@
+plugins {
+    id 'project-conventions'
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.retry:spring-retry'
+    implementation 'org.springframework:spring-aspects' // Required for @Retryable annotation
+}
+
+springBoot {
+    mainClass = 'com.reliaquest.api.ApiApplication'
+}
